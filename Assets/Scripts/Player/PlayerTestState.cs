@@ -4,28 +4,34 @@ public class PlayerTestState : PlayerBaseState
 {
     private float timerValue = 0f;
 
-    public PlayerTestState(PlayerStateMachine playerStateMachine) : base(playerStateMachine) { }
+    public PlayerTestState(PlayerStateMachine stateMachine) : base(stateMachine) { }
 
     public override void Enter()
     {
+        stateMachine.InputReader.JumpEvent += OnJump;
         Debug.Log("Entering Player Test State");
     }
 
     public override void Tick(float deltaTime)
     {
+
         Debug.Log("Timer: " + timerValue);
 
         timerValue += deltaTime;
-        if (timerValue >= 5f)
-        {
-            Debug.Log("Test value exceeded 5 seconds, switching state...");
-            playerStateMachine.SwitchState(new PlayerTestState(playerStateMachine)); // Example of switching to the same state
-        }
+
+    }
+
+    public void OnJump()
+    {
+        stateMachine.SwitchState(new PlayerTestState(stateMachine));
+        Debug.Log("Jump event received in PlayerTestState");
     }
 
     public override void Exit()
     {
+        stateMachine.InputReader.JumpEvent -= OnJump;
         Debug.Log("Exiting Player Test State");
     }
+
 
 }

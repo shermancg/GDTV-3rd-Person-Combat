@@ -3,11 +3,11 @@ using UnityEngine;
 public abstract class PlayerBaseState : State
 {
     // Protected is like public but only accessible within this class and inhereted classes
-    protected PlayerStateMachine playerStateMachine;
+    protected PlayerStateMachine stateMachine;
 
-    public PlayerBaseState(PlayerStateMachine playerStateMachine)
+    public PlayerBaseState(PlayerStateMachine stateMachine)
     {
-        this.playerStateMachine = playerStateMachine;
+        this.stateMachine = stateMachine;
 
     }
 }
