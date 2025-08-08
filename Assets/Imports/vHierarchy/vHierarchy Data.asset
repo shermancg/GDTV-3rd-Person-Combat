@@ -15,6 +15,7 @@ MonoBehaviour:
   sceneDatas_byGuid:
     keys:
     - 99c9720ab356a0642a771bea13969a05
+    - ade1fc2c93eb2054b9f368530de64a34
     values:
     - goDatas_byGlobalId:
         keys:
@@ -30,6 +31,34 @@ MonoBehaviour:
           iconNameOrGuid: Camera Icon
           isIconRecursive: 0
           isColorRecursive: 0
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-ade1fc2c93eb2054b9f368530de64a34-1309700519-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ade1fc2c93eb2054b9f368530de64a34-1604026252-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ade1fc2c93eb2054b9f368530de64a34-1885029403-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ade1fc2c93eb2054b9f368530de64a34-1625186612-0
+        - globalObjectIdString: GlobalObjectId_V1-2-ade1fc2c93eb2054b9f368530de64a34-1126288642-0
+        values:
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+          isIconRecursive: 0
+          isColorRecursive: 1
+        - colorIndex: 0
+          iconNameOrGuid: DirectionalLight Icon
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 5
+          iconNameOrGuid: Terrain Icon
+          isIconRecursive: 0
+          isColorRecursive: 1
+        - colorIndex: 8
+          iconNameOrGuid: ScriptableObject Icon
+          isIconRecursive: 0
+          isColorRecursive: 1
         - colorIndex: 0
           iconNameOrGuid: Camera Icon
           isIconRecursive: 0
